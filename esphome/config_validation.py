@@ -1917,7 +1917,7 @@ ENTITY_BASE_SCHEMA.add_extra(_entity_base_validator)
 COMPONENT_SCHEMA = Schema({Optional(CONF_SETUP_PRIORITY): float_})
 
 
-def polling_component_schema(default_update_interval):
+def _schema(default_update_interval):
     """Validate that this component represents a PollingComponent with a configurable
     update_interval.
 
